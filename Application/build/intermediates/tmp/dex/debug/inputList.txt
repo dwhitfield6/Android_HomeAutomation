@@ -1,0 +1,6 @@
+C:\Users\dwhitfield\Documents\GitHub\Android_HomeAutomation\Application\build\intermediates\classes\debug
+C:\Users\dwhitfield\Documents\GitHub\Android_HomeAutomation\Application\build\intermediates\pre-dexed\debug\support-annotations-21.0.2-38f1ac0d937c7da9306aadc086119a2c5f3fdcf0.jar
+C:\Users\dwhitfield\Documents\GitHub\Android_HomeAutomation\Application\build\intermediates\pre-dexed\debug\classes-2a21d69dd71d76e1a824bdec9d4aaacdecab4b29.jar
+C:\Users\dwhitfield\Documents\GitHub\Android_HomeAutomation\Application\build\intermediates\pre-dexed\debug\classes-1df017352b5cccc13f2d9fa3e13957910db5e78b.jar
+C:\Users\dwhitfield\Documents\GitHub\Android_HomeAutomation\Application\build\intermediates\pre-dexed\debug\internal_impl-21.0.2-e25e638c15a10bc98f27b0959927e713304d7d1d.jar
+C:\Users\dwhitfield\Documents\GitHub\Android_HomeAutomation\Application\build\intermediates\pre-dexed\debug\classes-62c674227efa3ab2f667268b6140c7d43fe2e57e.jar
