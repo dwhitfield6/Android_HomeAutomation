@@ -17,49 +17,190 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
-              android:orientation="vertical" >
+              android:orientation="vertical"
+    android:weightSum="1">
 
-    <ListView
-        android:id="@+id/in"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:stackFromBottom="true"
-        android:transcriptMode="alwaysScroll" />
-
-    <ImageButton
-        android:layout_width="86dp"
-        android:layout_height="144dp"
-        android:id="@+id/LampButton"
-        android:layout_gravity="right"
-        android:background="@mipmap/lamp"
-        android:focusableInTouchMode="false"
-        android:focusable="false" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="LivingRoom"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal" >
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="94dp"
+            android:id="@+id/LivingroomButton1"
+            android:background="@mipmap/lamp"
+            android:focusableInTouchMode="false"
+            android:focusable="false"
+            android:layout_weight="0.19" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="94dp"
+            android:id="@+id/LivingroomButton2"
+            android:background="@mipmap/lamp"
+            android:focusableInTouchMode="false"
+            android:focusable="false"
+            android:layout_weight="0.19" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="94dp"
+            android:id="@+id/LivingroomButton3"
+            android:background="@mipmap/lamp"
+            android:focusableInTouchMode="false"
+            android:focusable="false"
+            android:layout_weight="0.19" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="94dp"
+            android:id="@+id/LivingroomButton5"
+            android:background="@mipmap/lamp"
+            android:focusableInTouchMode="false"
+            android:focusable="false"
+            android:layout_weight="0.19" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Bedroom"
+        android:id="@+id/textView2"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="94dp"
+            android:id="@+id/BedroomButton1"
+            android:background="@mipmap/lamp"
+            android:focusableInTouchMode="false"
+            android:focusable="false"
+            android:layout_weight="0.19" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="94dp"
+            android:id="@+id/BedroomButton2"
+            android:background="@mipmap/lamp"
+            android:focusableInTouchMode="false"
+            android:focusable="false"
+            android:layout_weight="0.19" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="94dp"
+            android:id="@+id/BedroomButton3"
+            android:background="@mipmap/lamp"
+            android:focusableInTouchMode="false"
+            android:focusable="false"
+            android:layout_weight="0.19" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="94dp"
+            android:id="@+id/BedroomButton4"
+            android:background="@mipmap/lamp"
+            android:focusableInTouchMode="false"
+            android:focusable="false"
+            android:layout_weight="0.19" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Joes Room"
+        android:id="@+id/textView3"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="94dp"
+            android:id="@+id/JoeButton1"
+            android:background="@mipmap/lamp"
+            android:focusableInTouchMode="false"
+            android:focusable="false"
+            android:layout_weight="0.19" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="94dp"
+            android:id="@+id/JoeButton2"
+            android:background="@mipmap/lamp"
+            android:focusableInTouchMode="false"
+            android:focusable="false"
+            android:layout_weight="0.19" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="94dp"
+            android:id="@+id/JoeButton3"
+            android:background="@mipmap/lamp"
+            android:focusableInTouchMode="false"
+            android:focusable="false"
+            android:layout_weight="0.19" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="94dp"
+            android:id="@+id/JoeButton4"
+            android:background="@mipmap/lamp"
+            android:focusableInTouchMode="false"
+            android:focusable="false"
+            android:layout_weight="0.19" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1" >
 
         <EditText
             android:id="@+id/edit_text_out"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            android:layout_weight="1" />
+            android:layout_weight="0.82"
+            android:hint="Enter Text" />
 
         <Button
             android:id="@+id/button_send"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/send" />
-
-        <Button
-            android:id="@+id/button_Conf1_ChannelD"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Conf1_ChannelD" />
+            android:text="@string/send"
+            android:layout_weight="0.12" />
     </LinearLayout>
+
+    <ListView
+        android:id="@+id/in"
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:stackFromBottom="true"
+        android:transcriptMode="alwaysScroll"
+        android:layout_weight="1.17" />
 
 </LinearLayout>
 <!-- From: file:/C:/Users/dwhitfield/Documents/GitHub/Android_HomeAutomation/Application/src/main/res/layout/fragment_bluetooth_chat.xml -->

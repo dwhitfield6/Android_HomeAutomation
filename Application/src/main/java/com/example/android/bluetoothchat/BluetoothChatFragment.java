@@ -20,10 +20,12 @@ import android.app.ActionBar;
 import android.app.Activity;
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.os.Vibrator;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
@@ -61,9 +63,8 @@ public class BluetoothChatFragment extends Fragment {
     private ListView mConversationView;
     private EditText mOutEditText;
     private Button mSendButton;
-    private Button Button_conf1_channelD;
+    private ImageButton Button_conf1_channelD;
     private ImageButton Button_Lamp;
-
     /**
      * Name of the connected device
      */
@@ -89,10 +90,14 @@ public class BluetoothChatFragment extends Fragment {
      */
     private BluetoothChatService mChatService = null;
 
+    private Vibrator MyVib;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setHasOptionsMenu(true);
+
+        MyVib = (Vibrator) getActivity().getSystemService(Context.VIBRATOR_SERVICE);
         // Get local Bluetooth adapter
         mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
 
@@ -103,7 +108,6 @@ public class BluetoothChatFragment extends Fragment {
             activity.finish();
         }
     }
-
 
     @Override
     public void onStart() {
@@ -154,8 +158,8 @@ public class BluetoothChatFragment extends Fragment {
         mConversationView = (ListView) view.findViewById(R.id.in);
         mOutEditText = (EditText) view.findViewById(R.id.edit_text_out);
         mSendButton = (Button) view.findViewById(R.id.button_send);
-        Button_conf1_channelD = (Button) view.findViewById(R.id.button_Conf1_ChannelD);
-        Button_Lamp = (ImageButton) view.findViewById(R.id.LampButton);
+        Button_conf1_channelD = (ImageButton) view.findViewById(R.id.LivingroomButton1);
+        Button_Lamp = (ImageButton) view.findViewById(R.id.LivingroomButton2);
     }
 
     /**
@@ -180,7 +184,8 @@ public class BluetoothChatFragment extends Fragment {
                 if (null != view) {
                     TextView textView = (TextView) view.findViewById(R.id.edit_text_out);
                     String message = textView.getText().toString();
-                    sendMessage(message);
+                    sendMessage(message + "\r\n");
+                    MyVib.vibrate(100);
                 }
             }
         });
@@ -188,8 +193,9 @@ public class BluetoothChatFragment extends Fragment {
         // Initialize the send button with a listener that for click events
         Button_conf1_channelD.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                // Send a message using content of the edit text widget
-                    sendMessage("Conf1_ChannelD\r\n");
+                // Send a message using content of the edit text widge
+                sendMessage("Conf1_ChannelD\r\n");
+                MyVib.vibrate(100);
 
             }
         });
@@ -199,6 +205,7 @@ public class BluetoothChatFragment extends Fragment {
             public void onClick(View v) {
                 // Send a message using content of the edit text widget
                 sendMessage("Conf1_ChannelD\r\n");
+                MyVib.vibrate(100);
 
             }
         });

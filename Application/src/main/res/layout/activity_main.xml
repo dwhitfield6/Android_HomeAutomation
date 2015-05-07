@@ -39,7 +39,8 @@
                   android:paddingRight="@dimen/horizontal_page_margin"
                   android:paddingTop="@dimen/vertical_page_margin"
                   android:paddingBottom="@dimen/vertical_page_margin"
-                  android:text="@string/intro_message" />
+                  android:text="@string/intro_message"
+                  android:id="@+id/instructions" />
         </ScrollView>
 
         <fragment
@@ -57,7 +58,7 @@
 
     <FrameLayout
           android:id="@+id/sample_content_fragment"
-          android:layout_weight="2"
+          android:layout_weight="6.28"
           android:layout_width="match_parent"
           android:layout_height="0px" />
 
