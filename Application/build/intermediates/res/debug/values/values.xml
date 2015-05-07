@@ -34,8 +34,8 @@
     <eat-comment/>
     <string name="bt_not_enabled_leaving">Bluetooth was not enabled. Leaving Bluetooth Chat.</string>
     <string name="button_scan">Scan for devices</string>
+    <string name="disconnect">Disconnect the device</string>
     <string name="discoverable">Make discoverable</string>
-    <string name="insecure_connect">Connect a device - Insecure</string>
     <!-- From: file:/C:/Users/dwhitfield/Documents/GitHub/Android_HomeAutomation/Application/src/main/res/values/base-strings.xml -->
     <eat-comment/>
     <string name="intro_message">

@@ -54,7 +54,7 @@ public class BluetoothChatFragment extends Fragment {
 
     // Intent request codes
     private static final int REQUEST_CONNECT_DEVICE_SECURE = 1;
-    private static final int REQUEST_CONNECT_DEVICE_INSECURE = 2;
+    private static final int REQUEST_DISCONNECT = 2;
     private static final int REQUEST_ENABLE_BT = 3;
 
     // Layout Views
@@ -357,11 +357,9 @@ public class BluetoothChatFragment extends Fragment {
                     connectDevice(data, true);
                 }
                 break;
-            case REQUEST_CONNECT_DEVICE_INSECURE:
-                // When DeviceListActivity returns with a device to connect
-                if (resultCode == Activity.RESULT_OK) {
-                    connectDevice(data, false);
-                }
+            case REQUEST_DISCONNECT:
+                // Break connection
+                disconnectDevice();
                 break;
             case REQUEST_ENABLE_BT:
                 // When the request to enable Bluetooth returns
@@ -394,6 +392,11 @@ public class BluetoothChatFragment extends Fragment {
         mChatService.connect(device, secure);
     }
 
+    private void disconnectDevice() {
+        // Stop the chat service
+        mChatService.stop();
+    }
+
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         inflater.inflate(R.menu.bluetooth_chat, menu);
@@ -408,10 +411,9 @@ public class BluetoothChatFragment extends Fragment {
                 startActivityForResult(serverIntent, REQUEST_CONNECT_DEVICE_SECURE);
                 return true;
             }
-            case R.id.insecure_connect_scan: {
-                // Launch the DeviceListActivity to see devices and do scan
-                Intent serverIntent = new Intent(getActivity(), DeviceListActivity.class);
-                startActivityForResult(serverIntent, REQUEST_CONNECT_DEVICE_INSECURE);
+            case R.id.disconnect: {
+                // Disconnect the device
+                disconnectDevice();
                 return true;
             }
             case R.id.discoverable: {

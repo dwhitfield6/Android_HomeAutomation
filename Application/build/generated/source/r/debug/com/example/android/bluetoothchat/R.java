@@ -284,6 +284,7 @@ containing a value of this type.
         public static final int center_vertical=0x7f0a0007;
         public static final int clip_horizontal=0x7f0a0008;
         public static final int clip_vertical=0x7f0a0009;
+        public static final int disconnect=0x7f0a0021;
         public static final int discoverable=0x7f0a0022;
         public static final int edit_text_out=0x7f0a001d;
         public static final int end=0x7f0a000a;
@@ -292,7 +293,6 @@ containing a value of this type.
         public static final int fill_vertical=0x7f0a000d;
         public static final int horizontal=0x7f0a0000;
         public static final int in=0x7f0a001b;
-        public static final int insecure_connect_scan=0x7f0a0021;
         public static final int left=0x7f0a000e;
         public static final int log_fragment=0x7f0a0019;
         public static final int menu_toggle_log=0x7f0a0023;
@@ -329,8 +329,8 @@ containing a value of this type.
         public static final int app_name=0x7f070001;
         public static final int bt_not_enabled_leaving=0x7f070002;
         public static final int button_scan=0x7f070003;
-        public static final int discoverable=0x7f070004;
-        public static final int insecure_connect=0x7f070005;
+        public static final int disconnect=0x7f070004;
+        public static final int discoverable=0x7f070005;
         public static final int intro_message=0x7f070006;
         public static final int none_found=0x7f070007;
         public static final int none_paired=0x7f070008;
