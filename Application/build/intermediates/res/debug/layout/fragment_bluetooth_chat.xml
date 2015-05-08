@@ -38,7 +38,7 @@
             android:layout_width="wrap_content"
             android:layout_height="94dp"
             android:id="@+id/LivingroomButton1"
-            android:background="@mipmap/lamp"
+            android:background="@mipmap/lamp1"
             android:focusableInTouchMode="false"
             android:focusable="false"
             android:layout_weight="0.19" />
@@ -47,7 +47,7 @@
             android:layout_width="wrap_content"
             android:layout_height="94dp"
             android:id="@+id/LivingroomButton2"
-            android:background="@mipmap/lamp"
+            android:background="@mipmap/lamp2"
             android:focusableInTouchMode="false"
             android:focusable="false"
             android:layout_weight="0.19" />
@@ -56,7 +56,16 @@
             android:layout_width="wrap_content"
             android:layout_height="94dp"
             android:id="@+id/LivingroomButton3"
-            android:background="@mipmap/lamp"
+            android:background="@mipmap/lamp3"
+            android:focusableInTouchMode="false"
+            android:focusable="false"
+            android:layout_weight="0.19" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="94dp"
+            android:id="@+id/LivingroomButton4"
+            android:background="@mipmap/lamp4"
             android:focusableInTouchMode="false"
             android:focusable="false"
             android:layout_weight="0.19" />
@@ -65,7 +74,7 @@
             android:layout_width="wrap_content"
             android:layout_height="94dp"
             android:id="@+id/LivingroomButton5"
-            android:background="@mipmap/lamp"
+            android:background="@mipmap/lamp5"
             android:focusableInTouchMode="false"
             android:focusable="false"
             android:layout_weight="0.19" />
@@ -89,7 +98,7 @@
             android:layout_width="wrap_content"
             android:layout_height="94dp"
             android:id="@+id/BedroomButton1"
-            android:background="@mipmap/lamp"
+            android:background="@mipmap/lamp1"
             android:focusableInTouchMode="false"
             android:focusable="false"
             android:layout_weight="0.19" />
@@ -98,7 +107,7 @@
             android:layout_width="wrap_content"
             android:layout_height="94dp"
             android:id="@+id/BedroomButton2"
-            android:background="@mipmap/lamp"
+            android:background="@mipmap/lamp2"
             android:focusableInTouchMode="false"
             android:focusable="false"
             android:layout_weight="0.19" />
@@ -107,7 +116,7 @@
             android:layout_width="wrap_content"
             android:layout_height="94dp"
             android:id="@+id/BedroomButton3"
-            android:background="@mipmap/lamp"
+            android:background="@mipmap/lamp3"
             android:focusableInTouchMode="false"
             android:focusable="false"
             android:layout_weight="0.19" />
@@ -116,7 +125,16 @@
             android:layout_width="wrap_content"
             android:layout_height="94dp"
             android:id="@+id/BedroomButton4"
-            android:background="@mipmap/lamp"
+            android:background="@mipmap/lamp4"
+            android:focusableInTouchMode="false"
+            android:focusable="false"
+            android:layout_weight="0.19" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="94dp"
+            android:id="@+id/BedroomButton5"
+            android:background="@mipmap/lamp5"
             android:focusableInTouchMode="false"
             android:focusable="false"
             android:layout_weight="0.19" />
@@ -139,8 +157,8 @@
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="94dp"
-            android:id="@+id/JoeButton1"
-            android:background="@mipmap/lamp"
+            android:id="@+id/JoesButton1"
+            android:background="@mipmap/lamp1"
             android:focusableInTouchMode="false"
             android:focusable="false"
             android:layout_weight="0.19" />
@@ -148,8 +166,8 @@
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="94dp"
-            android:id="@+id/JoeButton2"
-            android:background="@mipmap/lamp"
+            android:id="@+id/JoesButton2"
+            android:background="@mipmap/lamp2"
             android:focusableInTouchMode="false"
             android:focusable="false"
             android:layout_weight="0.19" />
@@ -157,8 +175,8 @@
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="94dp"
-            android:id="@+id/JoeButton3"
-            android:background="@mipmap/lamp"
+            android:id="@+id/JoesButton3"
+            android:background="@mipmap/lamp3"
             android:focusableInTouchMode="false"
             android:focusable="false"
             android:layout_weight="0.19" />
@@ -166,8 +184,17 @@
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="94dp"
-            android:id="@+id/JoeButton4"
-            android:background="@mipmap/lamp"
+            android:id="@+id/JoesButton4"
+            android:background="@mipmap/lamp4"
+            android:focusableInTouchMode="false"
+            android:focusable="false"
+            android:layout_weight="0.19" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="94dp"
+            android:id="@+id/JoesButton5"
+            android:background="@mipmap/lamp5"
             android:focusableInTouchMode="false"
             android:focusable="false"
             android:layout_weight="0.19" />

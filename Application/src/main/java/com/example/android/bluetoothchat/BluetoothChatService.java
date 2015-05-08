@@ -85,7 +85,7 @@ public class BluetoothChatService {
     private synchronized void setState(int state) {
         Log.d(TAG, "setState() " + mState + " -> " + state);
         mState = state;
-
+        Global.mState = state;
         // Give the new state to the Handler so the UI Activity can update
         mHandler.obtainMessage(Constants.MESSAGE_STATE_CHANGE, state, -1).sendToTarget();
     }
@@ -272,9 +272,17 @@ public class BluetoothChatService {
         // Send a failure message back to the Activity
         Message msg = mHandler.obtainMessage(Constants.MESSAGE_TOAST);
         Bundle bundle = new Bundle();
-        bundle.putString(Constants.TOAST, "Device connection was lost");
+        if(Global.DisconnectHit != 1)
+        {
+            bundle.putString(Constants.TOAST, "Device connection was lost");
+        }
+        else
+        {
+            bundle.putString(Constants.TOAST, "Device disconnected successfully");
+        }
         msg.setData(bundle);
         mHandler.sendMessage(msg);
+        Global.DisconnectHit = 0;
 
         // Start the service over to restart listening mode
         BluetoothChatService.this.start();

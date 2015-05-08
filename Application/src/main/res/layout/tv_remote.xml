@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="TV Remote"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"></TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></TableLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/imageButton"
+            android:background="@mipmap/tvpower"
+            android:focusableInTouchMode="false"
+            android:focusable="false"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="false" />
+
+        <ImageButton
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/LivingroomButton1"
+            android:background="@mipmap/left_arrow"
+            android:focusableInTouchMode="false"
+            android:focusable="false"
+            android:layout_weight="0.19"
+            android:layout_above="@+id/imageButton4"
+            android:layout_centerHorizontal="true" />
+
+        <ImageButton
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/imageButton2"
+            android:background="@mipmap/right_arrow"
+            android:focusableInTouchMode="false"
+            android:focusable="false"
+            android:layout_weight="0.19"
+            android:layout_below="@+id/imageButton3"
+            android:layout_toRightOf="@+id/imageButton3"
+            android:layout_toEndOf="@+id/imageButton3" />
+
+        <ImageButton
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/imageButton3"
+            android:background="@mipmap/up_arrow"
+            android:focusableInTouchMode="false"
+            android:focusable="false"
+            android:layout_weight="0.19"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/imageButton5"
+            android:layout_alignStart="@+id/imageButton5" />
+
+        <ImageButton
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/imageButton4"
+            android:background="@mipmap/down_arrow"
+            android:focusableInTouchMode="false"
+            android:focusable="false"
+            android:layout_weight="0.19"
+            android:layout_below="@+id/imageButton5"
+            android:layout_toRightOf="@+id/LivingroomButton1"
+            android:layout_toEndOf="@+id/LivingroomButton1" />
+
+        <ImageButton
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/imageButton5"
+            android:background="@mipmap/ok"
+            android:focusableInTouchMode="false"
+            android:focusable="false"
+            android:layout_weight="0.19"
+            android:layout_below="@+id/imageButton3"
+            android:layout_alignLeft="@+id/imageButton4"
+            android:layout_alignStart="@+id/imageButton4" />
+
+        <ImageButton
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/imageButton6"
+            android:background="@mipmap/three"
+            android:focusableInTouchMode="false"
+            android:focusable="false"
+            android:layout_weight="0.19"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/imageButton18"
+            android:background="@mipmap/louder"
+            android:focusableInTouchMode="false"
+            android:focusable="false"
+            android:layout_below="@+id/imageButton"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/imageButton19"
+            android:background="@mipmap/quieter"
+            android:focusableInTouchMode="false"
+            android:focusable="false"
+            android:layout_below="@+id/imageButton18"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/imageButton20"
+            android:background="@mipmap/mute"
+            android:focusableInTouchMode="false"
+            android:focusable="false"
+            android:layout_below="@+id/imageButton19"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageButton
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/imageButton7"
+            android:background="@mipmap/two"
+            android:focusableInTouchMode="false"
+            android:focusable="false"
+            android:layout_weight="0.19"
+            android:layout_below="@+id/imageButton4"
+            android:layout_toLeftOf="@+id/imageButton6"
+            android:layout_toStartOf="@+id/imageButton6" />
+
+        <ImageButton
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/imageButton8"
+            android:background="@mipmap/one"
+            android:focusableInTouchMode="false"
+            android:focusable="false"
+            android:layout_weight="0.19"
+            android:layout_below="@+id/imageButton4"
+            android:layout_toLeftOf="@+id/imageButton7"
+            android:layout_toStartOf="@+id/imageButton7" />
+
+        <ImageButton
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/imageButton9"
+            android:background="@mipmap/six"
+            android:focusableInTouchMode="false"
+            android:focusable="false"
+            android:layout_weight="0.19"
+            android:layout_below="@+id/imageButton7"
+            android:layout_toRightOf="@+id/imageButton11"
+            android:layout_toEndOf="@+id/imageButton11" />
+
+        <ImageButton
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/imageButton10"
+            android:background="@mipmap/four"
+            android:focusableInTouchMode="false"
+            android:focusable="false"
+            android:layout_weight="0.19"
+            android:layout_below="@+id/imageButton7"
+            android:layout_alignLeft="@+id/imageButton8"
+            android:layout_alignStart="@+id/imageButton8" />
+
+        <ImageButton
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/imageButton11"
+            android:background="@mipmap/five"
+            android:focusableInTouchMode="false"
+            android:focusable="false"
+            android:layout_weight="0.19"
+            android:layout_below="@+id/imageButton7"
+            android:layout_toRightOf="@+id/imageButton10"
+            android:layout_toEndOf="@+id/imageButton10" />
+
+        <ImageButton
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/imageButton12"
+            android:background="@mipmap/seven"
+            android:focusableInTouchMode="false"
+            android:focusable="false"
+            android:layout_weight="0.19"
+            android:layout_below="@+id/imageButton10"
+            android:layout_alignLeft="@+id/imageButton10"
+            android:layout_alignStart="@+id/imageButton10" />
+
+        <ImageButton
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/imageButton13"
+            android:background="@mipmap/eight"
+            android:focusableInTouchMode="false"
+            android:focusable="false"
+            android:layout_weight="0.19"
+            android:layout_alignTop="@+id/imageButton12"
+            android:layout_alignLeft="@+id/imageButton11"
+            android:layout_alignStart="@+id/imageButton11" />
+
+        <ImageButton
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/imageButton14"
+            android:background="@mipmap/nine"
+            android:focusableInTouchMode="false"
+            android:focusable="false"
+            android:layout_weight="0.19"
+            android:layout_alignTop="@+id/imageButton13"
+            android:layout_toRightOf="@+id/imageButton13"
+            android:layout_toEndOf="@+id/imageButton13" />
+
+        <ImageButton
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/imageButton15"
+            android:background="@mipmap/zero"
+            android:focusableInTouchMode="false"
+            android:focusable="false"
+            android:layout_weight="0.19"
+            android:layout_below="@+id/imageButton12"
+            android:layout_toRightOf="@+id/imageButton12"
+            android:layout_toEndOf="@+id/imageButton12" />
+
+    </RelativeLayout>
+
+</LinearLayout>

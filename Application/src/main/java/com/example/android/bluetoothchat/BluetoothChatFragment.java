@@ -63,8 +63,6 @@ public class BluetoothChatFragment extends Fragment {
     private ListView mConversationView;
     private EditText mOutEditText;
     private Button mSendButton;
-    private ImageButton Button_conf1_channelD;
-    private ImageButton Button_Lamp;
     /**
      * Name of the connected device
      */
@@ -90,7 +88,32 @@ public class BluetoothChatFragment extends Fragment {
      */
     private BluetoothChatService mChatService = null;
 
+    /**
+     * Vibrate motor
+     */
     private Vibrator MyVib;
+
+    /**
+     *
+     * buttons
+     */
+    private ImageButton bLivingtoom_Lamp1;
+    private ImageButton bLivingtoom_Lamp2;
+    private ImageButton bLivingtoom_Lamp3;
+    private ImageButton bLivingtoom_Lamp4;
+    private ImageButton bLivingtoom_Lamp5;
+
+    private ImageButton bBedroom_Lamp1;
+    private ImageButton bBedroom_Lamp2;
+    private ImageButton bBedroom_Lamp3;
+    private ImageButton bBedroom_Lamp4;
+    private ImageButton bBedroom_Lamp5;
+
+    private ImageButton bJoesroom_Lamp1;
+    private ImageButton bJoesroom_Lamp2;
+    private ImageButton bJoesroom_Lamp3;
+    private ImageButton bJoesroom_Lamp4;
+    private ImageButton bJoesroom_Lamp5;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -158,8 +181,21 @@ public class BluetoothChatFragment extends Fragment {
         mConversationView = (ListView) view.findViewById(R.id.in);
         mOutEditText = (EditText) view.findViewById(R.id.edit_text_out);
         mSendButton = (Button) view.findViewById(R.id.button_send);
-        Button_conf1_channelD = (ImageButton) view.findViewById(R.id.LivingroomButton1);
-        Button_Lamp = (ImageButton) view.findViewById(R.id.LivingroomButton2);
+        bLivingtoom_Lamp1 = (ImageButton) view.findViewById(R.id.LivingroomButton1);
+        bLivingtoom_Lamp2 = (ImageButton) view.findViewById(R.id.LivingroomButton2);
+        bLivingtoom_Lamp3 = (ImageButton) view.findViewById(R.id.LivingroomButton3);
+        bLivingtoom_Lamp4 = (ImageButton) view.findViewById(R.id.LivingroomButton4);
+        bLivingtoom_Lamp5 = (ImageButton) view.findViewById(R.id.LivingroomButton5);
+        bBedroom_Lamp1 = (ImageButton) view.findViewById(R.id.BedroomButton1);
+        bBedroom_Lamp2 = (ImageButton) view.findViewById(R.id.BedroomButton2);
+        bBedroom_Lamp3 = (ImageButton) view.findViewById(R.id.BedroomButton3);
+        bBedroom_Lamp4 = (ImageButton) view.findViewById(R.id.BedroomButton4);
+        bBedroom_Lamp5 = (ImageButton) view.findViewById(R.id.BedroomButton5);
+        bJoesroom_Lamp1 = (ImageButton) view.findViewById(R.id.JoesButton1);
+        bJoesroom_Lamp2 = (ImageButton) view.findViewById(R.id.JoesButton2);
+        bJoesroom_Lamp3 = (ImageButton) view.findViewById(R.id.JoesButton3);
+        bJoesroom_Lamp4 = (ImageButton) view.findViewById(R.id.JoesButton4);
+        bJoesroom_Lamp5 = (ImageButton) view.findViewById(R.id.JoesButton5);
     }
 
     /**
@@ -185,31 +221,202 @@ public class BluetoothChatFragment extends Fragment {
                     TextView textView = (TextView) view.findViewById(R.id.edit_text_out);
                     String message = textView.getText().toString();
                     sendMessage(message + "\r\n");
+                    if(Global.mState == 3)
+                    {
+                        MyVib.vibrate(100);
+                    }
+                }
+            }
+        });
+
+        /**
+         * Living room
+         */
+        // Initialize the send button with a listener that for click events
+        bLivingtoom_Lamp1.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // Send a message using content of the edit text widge
+                sendMessage("Conf1_ChannelD\r\n");
+                if(Global.mState == 3)
+                {
                     MyVib.vibrate(100);
                 }
             }
         });
 
         // Initialize the send button with a listener that for click events
-        Button_conf1_channelD.setOnClickListener(new View.OnClickListener() {
+        bLivingtoom_Lamp2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 // Send a message using content of the edit text widge
                 sendMessage("Conf1_ChannelD\r\n");
-                MyVib.vibrate(100);
-
+                if(Global.mState == 3)
+                {
+                    MyVib.vibrate(100);
+                }
             }
         });
 
         // Initialize the send button with a listener that for click events
-        Button_Lamp .setOnClickListener(new View.OnClickListener() {
+        bLivingtoom_Lamp3.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                // Send a message using content of the edit text widget
+                // Send a message using content of the edit text widge
                 sendMessage("Conf1_ChannelD\r\n");
-                MyVib.vibrate(100);
-
+                if(Global.mState == 3)
+                {
+                    MyVib.vibrate(100);
+                }
             }
         });
 
+        // Initialize the send button with a listener that for click events
+        bLivingtoom_Lamp4.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // Send a message using content of the edit text widge
+                sendMessage("Conf1_ChannelD\r\n");
+                if(Global.mState == 3)
+                {
+                    MyVib.vibrate(100);
+                }
+            }
+        });
+
+        // Initialize the send button with a listener that for click events
+        bLivingtoom_Lamp5.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // Send a message using content of the edit text widge
+                sendMessage("Conf1_ChannelD\r\n");
+                if(Global.mState == 3)
+                {
+                    MyVib.vibrate(100);
+                }
+            }
+        });
+
+        /**
+         * Bedroom room
+         */
+        // Initialize the send button with a listener that for click events
+        bBedroom_Lamp1.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // Send a message using content of the edit text widge
+                sendMessage("Conf1_ChannelD\r\n");
+                if(Global.mState == 3)
+                {
+                    MyVib.vibrate(100);
+                }
+            }
+        });
+
+        // Initialize the send button with a listener that for click events
+        bBedroom_Lamp2.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // Send a message using content of the edit text widge
+                sendMessage("Conf1_ChannelD\r\n");
+                if(Global.mState == 3)
+                {
+                    MyVib.vibrate(100);
+                }
+            }
+        });
+
+        // Initialize the send button with a listener that for click events
+        bBedroom_Lamp3.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // Send a message using content of the edit text widge
+                sendMessage("Conf1_ChannelD\r\n");
+                if(Global.mState == 3)
+                {
+                    MyVib.vibrate(100);
+                }
+            }
+        });
+
+        // Initialize the send button with a listener that for click events
+        bBedroom_Lamp4.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // Send a message using content of the edit text widge
+                sendMessage("Conf1_ChannelD\r\n");
+                if(Global.mState == 3)
+                {
+                    MyVib.vibrate(100);
+                }
+            }
+        });
+
+        // Initialize the send button with a listener that for click events
+        bBedroom_Lamp5.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // Send a message using content of the edit text widge
+                sendMessage("Conf1_ChannelD\r\n");
+                if(Global.mState == 3)
+                {
+                    MyVib.vibrate(100);
+                }
+            }
+        });
+
+        /**
+         * Joes room
+         */
+        // Initialize the send button with a listener that for click events
+        bJoesroom_Lamp1.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // Send a message using content of the edit text widge
+                sendMessage("Conf1_ChannelD\r\n");
+                if(Global.mState == 3)
+                {
+                    MyVib.vibrate(100);
+                }
+            }
+        });
+
+        // Initialize the send button with a listener that for click events
+        bJoesroom_Lamp2.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // Send a message using content of the edit text widge
+                sendMessage("Conf1_ChannelD\r\n");
+                if(Global.mState == 3)
+                {
+                    MyVib.vibrate(100);
+                }
+            }
+        });
+
+        // Initialize the send button with a listener that for click events
+        bJoesroom_Lamp3.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // Send a message using content of the edit text widge
+                sendMessage("Conf1_ChannelD\r\n");
+                if(Global.mState == 3)
+                {
+                    MyVib.vibrate(100);
+                }
+            }
+        });
+
+        // Initialize the send button with a listener that for click events
+        bJoesroom_Lamp4.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // Send a message using content of the edit text widge
+                sendMessage("Conf1_ChannelD\r\n");
+                if(Global.mState == 3)
+                {
+                    MyVib.vibrate(100);
+                }
+            }
+        });
+
+        // Initialize the send button with a listener that for click events
+        bJoesroom_Lamp5.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // Send a message using content of the edit text widge
+                sendMessage("Conf1_ChannelD\r\n");
+                if(Global.mState == 3)
+                {
+                    MyVib.vibrate(100);
+                }
+            }
+        });
 
         // Initialize the BluetoothChatService to perform bluetooth connections
         mChatService = new BluetoothChatService(getActivity(), mHandler);
@@ -420,6 +627,7 @@ public class BluetoothChatFragment extends Fragment {
             }
             case R.id.disconnect: {
                 // Disconnect the device
+                Global.DisconnectHit = 1;
                 disconnectDevice();
                 return true;
             }

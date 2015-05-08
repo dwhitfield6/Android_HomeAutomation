@@ -29,10 +29,10 @@
     <string name="Conf1_ChannelD">Conf1_ChannelD</string>
     <!-- From: file:/C:/Users/dwhitfield/Documents/GitHub/Android_HomeAutomation/Application/src/main/res/values/base-strings.xml -->
     <eat-comment/>
-    <string name="app_name">BluetoothChat</string>
+    <string name="app_name">HomeAutomation</string>
     <!-- From: file:/C:/Users/dwhitfield/Documents/GitHub/Android_HomeAutomation/Application/src/main/res/values/strings.xml -->
     <eat-comment/>
-    <string name="bt_not_enabled_leaving">Bluetooth was not enabled. Leaving Bluetooth Chat.</string>
+    <string name="bt_not_enabled_leaving">Bluetooth was not enabled. Leaving Home Automation.</string>
     <string name="button_scan">Scan for devices</string>
     <string name="disconnect">Disconnect the device</string>
     <string name="discoverable">Make discoverable</string>
