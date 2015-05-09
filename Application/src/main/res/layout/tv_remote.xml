@@ -29,7 +29,7 @@
         <ImageButton
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:id="@+id/imageButton"
+            android:id="@+id/tvpower"
             android:background="@mipmap/tvpower"
             android:focusableInTouchMode="false"
             android:focusable="false"
@@ -40,214 +40,215 @@
         <ImageButton
             android:layout_width="70dp"
             android:layout_height="70dp"
-            android:id="@+id/LivingroomButton1"
+            android:id="@+id/left_arrow"
             android:background="@mipmap/left_arrow"
             android:focusableInTouchMode="false"
             android:focusable="false"
             android:layout_weight="0.19"
-            android:layout_above="@+id/imageButton4"
-            android:layout_centerHorizontal="true" />
+            android:layout_below="@+id/up_arrow"
+            android:layout_toLeftOf="@+id/up_arrow"
+            android:layout_toStartOf="@+id/up_arrow" />
 
         <ImageButton
             android:layout_width="70dp"
             android:layout_height="70dp"
-            android:id="@+id/imageButton2"
+            android:id="@+id/right_arrow"
             android:background="@mipmap/right_arrow"
             android:focusableInTouchMode="false"
             android:focusable="false"
             android:layout_weight="0.19"
-            android:layout_below="@+id/imageButton3"
-            android:layout_toRightOf="@+id/imageButton3"
-            android:layout_toEndOf="@+id/imageButton3" />
+            android:layout_above="@+id/down_arrow"
+            android:layout_toRightOf="@+id/ok"
+            android:layout_toEndOf="@+id/ok" />
 
         <ImageButton
             android:layout_width="70dp"
             android:layout_height="70dp"
-            android:id="@+id/imageButton3"
+            android:id="@+id/up_arrow"
             android:background="@mipmap/up_arrow"
             android:focusableInTouchMode="false"
             android:focusable="false"
             android:layout_weight="0.19"
-            android:layout_alignParentTop="true"
-            android:layout_alignLeft="@+id/imageButton5"
-            android:layout_alignStart="@+id/imageButton5" />
+            android:layout_above="@+id/right_arrow"
+            android:layout_toLeftOf="@+id/right_arrow"
+            android:layout_toStartOf="@+id/right_arrow" />
 
         <ImageButton
             android:layout_width="70dp"
             android:layout_height="70dp"
-            android:id="@+id/imageButton4"
+            android:id="@+id/down_arrow"
             android:background="@mipmap/down_arrow"
             android:focusableInTouchMode="false"
             android:focusable="false"
             android:layout_weight="0.19"
-            android:layout_below="@+id/imageButton5"
-            android:layout_toRightOf="@+id/LivingroomButton1"
-            android:layout_toEndOf="@+id/LivingroomButton1" />
+            android:layout_above="@+id/three"
+            android:layout_toLeftOf="@+id/three"
+            android:layout_toStartOf="@+id/three" />
 
         <ImageButton
             android:layout_width="70dp"
             android:layout_height="70dp"
-            android:id="@+id/imageButton5"
+            android:id="@+id/ok"
             android:background="@mipmap/ok"
             android:focusableInTouchMode="false"
             android:focusable="false"
             android:layout_weight="0.19"
-            android:layout_below="@+id/imageButton3"
-            android:layout_alignLeft="@+id/imageButton4"
-            android:layout_alignStart="@+id/imageButton4" />
+            android:layout_alignTop="@+id/right_arrow"
+            android:layout_toRightOf="@+id/one"
+            android:layout_toEndOf="@+id/one" />
 
         <ImageButton
             android:layout_width="70dp"
             android:layout_height="70dp"
-            android:id="@+id/imageButton6"
+            android:id="@+id/three"
             android:background="@mipmap/three"
             android:focusableInTouchMode="false"
             android:focusable="false"
             android:layout_weight="0.19"
-            android:layout_centerVertical="true"
+            android:layout_above="@+id/five"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true" />
 
         <ImageButton
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:id="@+id/imageButton18"
+            android:id="@+id/louder"
             android:background="@mipmap/louder"
             android:focusableInTouchMode="false"
             android:focusable="false"
-            android:layout_below="@+id/imageButton"
+            android:layout_below="@+id/tvpower"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true" />
 
         <ImageButton
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:id="@+id/imageButton19"
+            android:id="@+id/quieter"
             android:background="@mipmap/quieter"
             android:focusableInTouchMode="false"
             android:focusable="false"
-            android:layout_below="@+id/imageButton18"
+            android:layout_centerVertical="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true" />
 
         <ImageButton
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:id="@+id/imageButton20"
+            android:id="@+id/mute"
             android:background="@mipmap/mute"
             android:focusableInTouchMode="false"
             android:focusable="false"
-            android:layout_below="@+id/imageButton19"
+            android:layout_below="@+id/quieter"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true" />
 
         <ImageButton
             android:layout_width="70dp"
             android:layout_height="70dp"
-            android:id="@+id/imageButton7"
+            android:id="@+id/two"
             android:background="@mipmap/two"
             android:focusableInTouchMode="false"
             android:focusable="false"
             android:layout_weight="0.19"
-            android:layout_below="@+id/imageButton4"
-            android:layout_toLeftOf="@+id/imageButton6"
-            android:layout_toStartOf="@+id/imageButton6" />
+            android:layout_alignTop="@+id/three"
+            android:layout_toLeftOf="@+id/three"
+            android:layout_toStartOf="@+id/three" />
 
         <ImageButton
             android:layout_width="70dp"
             android:layout_height="70dp"
-            android:id="@+id/imageButton8"
+            android:id="@+id/one"
             android:background="@mipmap/one"
             android:focusableInTouchMode="false"
             android:focusable="false"
             android:layout_weight="0.19"
-            android:layout_below="@+id/imageButton4"
-            android:layout_toLeftOf="@+id/imageButton7"
-            android:layout_toStartOf="@+id/imageButton7" />
+            android:layout_below="@+id/down_arrow"
+            android:layout_toLeftOf="@+id/down_arrow"
+            android:layout_toStartOf="@+id/down_arrow" />
 
         <ImageButton
             android:layout_width="70dp"
             android:layout_height="70dp"
-            android:id="@+id/imageButton9"
+            android:id="@+id/six"
             android:background="@mipmap/six"
             android:focusableInTouchMode="false"
             android:focusable="false"
             android:layout_weight="0.19"
-            android:layout_below="@+id/imageButton7"
-            android:layout_toRightOf="@+id/imageButton11"
-            android:layout_toEndOf="@+id/imageButton11" />
+            android:layout_below="@+id/three"
+            android:layout_toRightOf="@+id/five"
+            android:layout_toEndOf="@+id/five" />
 
         <ImageButton
             android:layout_width="70dp"
             android:layout_height="70dp"
-            android:id="@+id/imageButton10"
+            android:id="@+id/four"
             android:background="@mipmap/four"
             android:focusableInTouchMode="false"
             android:focusable="false"
             android:layout_weight="0.19"
-            android:layout_below="@+id/imageButton7"
-            android:layout_alignLeft="@+id/imageButton8"
-            android:layout_alignStart="@+id/imageButton8" />
+            android:layout_alignTop="@+id/five"
+            android:layout_toLeftOf="@+id/five"
+            android:layout_toStartOf="@+id/five" />
 
         <ImageButton
             android:layout_width="70dp"
             android:layout_height="70dp"
-            android:id="@+id/imageButton11"
+            android:id="@+id/five"
             android:background="@mipmap/five"
             android:focusableInTouchMode="false"
             android:focusable="false"
             android:layout_weight="0.19"
-            android:layout_below="@+id/imageButton7"
-            android:layout_toRightOf="@+id/imageButton10"
-            android:layout_toEndOf="@+id/imageButton10" />
+            android:layout_above="@+id/eight"
+            android:layout_alignLeft="@+id/eight"
+            android:layout_alignStart="@+id/eight" />
 
         <ImageButton
             android:layout_width="70dp"
             android:layout_height="70dp"
-            android:id="@+id/imageButton12"
+            android:id="@+id/seven"
             android:background="@mipmap/seven"
             android:focusableInTouchMode="false"
             android:focusable="false"
             android:layout_weight="0.19"
-            android:layout_below="@+id/imageButton10"
-            android:layout_alignLeft="@+id/imageButton10"
-            android:layout_alignStart="@+id/imageButton10" />
+            android:layout_alignTop="@+id/eight"
+            android:layout_toLeftOf="@+id/eight"
+            android:layout_toStartOf="@+id/eight" />
 
         <ImageButton
             android:layout_width="70dp"
             android:layout_height="70dp"
-            android:id="@+id/imageButton13"
+            android:id="@+id/eight"
             android:background="@mipmap/eight"
             android:focusableInTouchMode="false"
             android:focusable="false"
             android:layout_weight="0.19"
-            android:layout_alignTop="@+id/imageButton12"
-            android:layout_alignLeft="@+id/imageButton11"
-            android:layout_alignStart="@+id/imageButton11" />
+            android:layout_above="@+id/zero"
+            android:layout_alignLeft="@+id/zero"
+            android:layout_alignStart="@+id/zero" />
 
         <ImageButton
             android:layout_width="70dp"
             android:layout_height="70dp"
-            android:id="@+id/imageButton14"
+            android:id="@+id/nine"
             android:background="@mipmap/nine"
             android:focusableInTouchMode="false"
             android:focusable="false"
             android:layout_weight="0.19"
-            android:layout_alignTop="@+id/imageButton13"
-            android:layout_toRightOf="@+id/imageButton13"
-            android:layout_toEndOf="@+id/imageButton13" />
+            android:layout_above="@+id/zero"
+            android:layout_toRightOf="@+id/zero"
+            android:layout_toEndOf="@+id/zero" />
 
         <ImageButton
             android:layout_width="70dp"
             android:layout_height="70dp"
-            android:id="@+id/imageButton15"
+            android:id="@+id/zero"
             android:background="@mipmap/zero"
             android:focusableInTouchMode="false"
             android:focusable="false"
             android:layout_weight="0.19"
-            android:layout_below="@+id/imageButton12"
-            android:layout_toRightOf="@+id/imageButton12"
-            android:layout_toEndOf="@+id/imageButton12" />
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/three"
+            android:layout_toStartOf="@+id/three" />
 
     </RelativeLayout>
 
