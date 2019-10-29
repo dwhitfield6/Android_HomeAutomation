@@ -1,7 +1,12 @@
+*.iml
 .gradle
 /local.properties
+/.idea
 /.idea/workspace.xml
 /.idea/libraries
 .DS_Store
 /build
+/Application/build
 /captures
+.idea/
+Application/build/intermediates/symbols/debug/R.txt
